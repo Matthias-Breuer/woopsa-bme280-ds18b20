@@ -1,0 +1,31 @@
+{
+  "name": "woopsa-bme280-ds18b20",
+  "version": "0.0.1",
+  "description": "WOOPSA server (https://www.woopsa.org) written with node in JavaScript publishing results of a bme280 and a ds18b20 sensor connected to a raspberry pi",
+  "main": "woopsa-index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthias-Breuer/woopsa-bme280-ds18b20.git"
+  },
+  "keywords": [
+    "woopsa",
+    "bme280",
+    "ds18b20",
+    "raspberry-pi"
+  ],
+  "author": "Matthias Breuer mail@matthias-breuer.de",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Matthias-Breuer/woopsa-bme280-ds18b20/issues"
+  },
+  "homepage": "https://github.com/Matthias-Breuer/woopsa-bme280-ds18b20#readme",
+  "dependencies": {
+    "bme280-sensor": "^0.1.6",
+    "ds18x20": "^0.2.0",
+    "moment-timezone": "^0.5.13",
+    "woopsa": "^1.1.9"
+  }
+}
