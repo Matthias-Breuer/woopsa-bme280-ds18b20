@@ -15,20 +15,6 @@ const bme280 = new BME280(options);
 
 const WaitTime = 5000;
 
-function queryFromLabsq(data) {
-
-    var probenahme = new Date(data.time),
-        minutes = data.time.getMinutes(),
-        mess_datum = moment(data.time).tz(dtZone).format(dtFormat);
-    probenahme.setMinutes(0);
-    probenahme.setSeconds(0);
-    probenahme.setMilliseconds(0);
-    console.log(`data = ${JSON.stringify(data, null, 2)}`);
-    const probenahmestr = moment(probenahme).tz(dtZone).format(dtFormat);
-    console.log('sampling time is ' + probenahmestr + ' at minute ' + minutes);
-
-}
-
 /* prepare the sampling time */
 const dtFormat = 'YYYY-MM-DD HH:mm:ss',
       dtZone = 'Europe/Berlin';
